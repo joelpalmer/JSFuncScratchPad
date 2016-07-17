@@ -1,16 +1,8 @@
-const wrap = (something) => {
-  const wrapped = [something];
+const length = ([first, ...rest]) =>
+    first === undefined
+        ? 0
+        : 1 + length(rest);
 
-  return wrapped;
-}
-
-console.log(wrap("package"));
-
-
-const unwrap = (wrapped) => {
-  const [something] = wrapped;
-
-  return something;
-}
-
-console.log(unwrap(["present"]));
+console.log(length([]));
+console.log(length(["foo"]));
+console.log(length(["foo", "bar", "baz"]));

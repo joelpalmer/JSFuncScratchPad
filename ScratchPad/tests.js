@@ -1,6 +1,6 @@
 QUnit.test("Destructuring", function (assert) {
 
-    assert.deepEqual(["package"], wrap("package"));
+    assert.deepEqual(["package"], wrap("package"), "['package'] == wrap('package')");
 });
 
 console.log(["package"]);
