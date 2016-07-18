@@ -1,13 +1,6 @@
-const flatten = ([first, ...rest]) => {
-    if (first === undefined) {
-        return [];
-    }
-    else if (!Array.isArray(first)) {
-        return [first, ...flatten(rest)];
-    }
-    else {
-        return [...flatten(first), ...flatten(rest)];
-    }
-}
+const mapWith = (fn, [first, ...rest]) =>
+    first === undefined
+    ? []
+    : [fn(first), ...mapWith(fn, rest)];
 
-console.log(flatten(["foo", [3,4, []]]));
+console.log(mapWith((x) => x * x, [1,2,3,4,5]));
