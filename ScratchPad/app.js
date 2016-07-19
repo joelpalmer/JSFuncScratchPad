@@ -1,6 +1,7 @@
-const mapWith = (fn, [first, ...rest]) =>
-    first === undefined
-    ? []
-    : [fn(first), ...mapWith(fn, rest)];
+const factorial = (n) =>
+    n == 1
+    ? n
+    : n * factorial(n-1);
 
-console.log(mapWith((x) => x * x, [1,2,3,4,5]));
+console.log(factorial(1));
+console.log(factorial(5));
