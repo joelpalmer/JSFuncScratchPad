@@ -1,3 +1,4 @@
+//custom
 function reject(array, iteratorFunction) {
   var temp = array.filter(iteratorFunction);
         return array.filter( function( number ) {
@@ -14,3 +15,10 @@ var lessThan30 = reject(numbers, function(number){
     });
 
 console.log(lessThan30);
+
+//underscore
+
+const rejectedNumbers = _.reject(numbers, (num)=> {
+    return num < 20 ;
+})
+console.log(rejectedNumbers);
