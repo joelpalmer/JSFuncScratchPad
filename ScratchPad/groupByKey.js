@@ -1,19 +1,19 @@
-var albums = [{
-    title: "Sabbath Bloody Sabbath",
-    genre: "Metal",
-    rating: "Good"
+var baseballTeams = [{
+    name: "Dodgers",
+    league: "National",
+    standing: "first"
 }, {
-    title: "Scientist",
-    genre: "Dub",
-    rating: "OK"
+    name: "Giants",
+    league: "National",
+    standing: "second"
 }, {
-    title: "Undertow",
-    genre: "Metal",
-    rating: "OK"
+    name: "Rangers",
+    league: "American",
+    standing: "third"
 }];
 
-var groupedByGenre = _.groupBy(albums, function(a){
-    return a.genre;
+var groupedByGenre = _.groupBy(baseballTeams, function(a){
+    return a.league;
 });
 
 //let's do a groupBy that takes a key... and an object
@@ -24,4 +24,4 @@ const groupBy = (key, obj) =>  {
     })
 }
 
-console.log(groupBy("rating", albums));
+console.log(groupBy("league", baseballTeams));

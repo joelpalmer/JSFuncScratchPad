@@ -1,6 +1,5 @@
 //converting book's map and reduce example from underscore to es5+... 
-//Fogus, Michael (2013-06-01). Functional JavaScript: Introducing  
-//Functional Programming with Underscore.js (p. 18). O'Reilly Media. Kindle Edition. 
+//Fogus, Michael (2013-06-01). Functional JavaScript: Introducing Functional //Programming with Underscore.js (p. 18). O'Reilly Media. Kindle Edition. 
 
 var peopleTable =
     lameCSV(" name, age, hair\nMerble, 35, red\nBob, 64, blonde");
@@ -38,3 +37,19 @@ function es5LameCSV(str) {
 };
 
 console.table(peopleTable2);
+
+//Ramda
+//console.log("--- Ramda ----");
+//var peopleTable3 =
+//    RlameCSV(" name, age, hair\nMerble, 35, red\nBob, 64, blonde");
+//
+//function RlameCSV(str) {
+//    return R.reduce(function (table, row) {
+//        table.push(R.map(function (c) {
+//            return c.trim()
+//        }, 0, row.split(",")));
+//        return table;
+//    }, str.split("\n"));
+//};
+//
+//console.table(peopleTable3);
