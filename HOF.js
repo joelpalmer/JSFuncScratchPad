@@ -64,3 +64,6 @@ const gt3 = highpass(3);
 console.log([1,2,3,4].filter(gt3));
 
 console.log([2,4,6].reduce((acc, n) => acc + n, 0));
+
+const summingReducer = (acc, n) => acc + n;
+console.log([2,4,6].reduce(summingReducer, 0));
