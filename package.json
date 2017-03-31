@@ -1,0 +1,23 @@
+{
+  "name": "jsfunc",
+  "version": "1.0.0",
+  "description": "Researching, testing and playing with functional JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "ramda": "^0.23.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelpalmer/JSFuncScratchPad.git"
+  },
+  "author": "Joel Palmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelpalmer/JSFuncScratchPad/issues"
+  },
+  "homepage": "https://github.com/joelpalmer/JSFuncScratchPad#readme"
+}
