@@ -67,3 +67,4 @@ console.log([2,4,6].reduce((acc, n) => acc + n, 0));
 
 const summingReducer = (acc, n) => acc + n;
 console.log([2,4,6].reduce(summingReducer, 0));
+console.log([2,4,6].reduceRight(summingReducer, 0));
